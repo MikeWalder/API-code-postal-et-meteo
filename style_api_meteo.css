@@ -1,0 +1,13 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+iframe {
+    width: 450px;
+    height: 250px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(148, 26, 26);
+}
