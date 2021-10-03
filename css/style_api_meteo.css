@@ -28,11 +28,6 @@ body {
     width: 60%;
 }
 
-.card-img-top:hover {
-    transform: scale(1.02);
-    transition: transform 0.5s ease-out;
-}
-
 #searchButton:hover {
     background-color: blueviolet;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -52,5 +47,23 @@ a:hover {
 }
 
 #datasMeteo1, #datasMeteo2, #datasMeteo3, #datasMeteo4 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+#datasMeteo1, #datasMeteo2, #datasMeteo3 {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 1px 0px 0px;
+}
+
+#datasMeteo1 {
+    border-width: 0px 1px 1px 0px;
+}
+
+#datasMeteo2 {
+    border-width: 0px 0px 1px 0px;
+}
+
+#datasMeteo3 {
+    border-width: 0px 1px 0px 0px;
 }
