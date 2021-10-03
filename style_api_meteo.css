@@ -2,9 +2,17 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#infosVilles ul {
+    padding: 0 0 0 0;
+}
+
+#infosVilles ul:nth-child() {
+    background-color: rgb(155, 39, 39);
+}
+
 #infosVilles ul li {
     list-style-type: none;
-    padding: 5px 0px;
+    padding: 2px 0px;
 }
 
 #infosVilles ul li:hover {
@@ -18,11 +26,10 @@ body {
 
 .card-img-top {
     width: 60%;
-    border: 2px solid black;
 }
 
 .card-img-top:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: transform 0.5s ease-out;
 }
 

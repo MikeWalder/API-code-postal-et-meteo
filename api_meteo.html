@@ -26,16 +26,16 @@
                 <h1 class="text-center mb-3">API météorologique</h1>
                 <form>
                     <div class="form-group">
-                        <label for="cp">Code postal</label>
+                        <!-- <label for="cp">Code postal</label> -->
                         <input type="text"
                             maxlength="5" 
                             class="form-control" 
                             name="cp" 
-                            placeholder="ex : 68200..."
+                            placeholder="code postal (ex : 68200)"
                             id="cp">
                     </div>
                 </form>
-                <div id='infosVilles'></div>
+                <div class="p-0" id='infosVilles'></div>
             </div>
             <div class="col-md-6 framerate">
                 <div class="card border-0">
@@ -44,26 +44,26 @@
                     alt="Carte de France">
 
                     <div class="card-body">
-                        <h5 class="card-title h2 text-center mb-3"></h5>
+                        <h5 class="card-title h2 text-center mb-2"></h5>
                         <p class="card-text"></p>
                         <div class="text-center">
                             
                             <div class="container mb-2" id="container">
 
-                                <div class="row text-left h3">
+                                <div class="row text-center">
                                     <div class="col-1"></div>
-                                    <div class="col-5 p-3" id="datasMeteo1">
+                                    <div class="col-5" id="datasMeteo1">
                                     </div>
-                                    <div class="col-5 p-3" id="datasMeteo2">
+                                    <div class="col-5" id="datasMeteo2">
                                     </div>
                                     <div class="col-1"></div>
                                 </div>
 
-                                <div class="row text-left h3">
+                                <div class="row text-center">
                                     <div class="col-1"></div>
-                                    <div class="col-5 p-3" id="datasMeteo3">
+                                    <div class="col-5" id="datasMeteo3">
                                     </div>
-                                    <div class="col-5 p-3" id="datasMeteo4">
+                                    <div class="col-5" id="datasMeteo4">
                                     </div>
                                     <div class="col-1"></div>
                                 </div>

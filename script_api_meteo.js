@@ -3,7 +3,7 @@ document.querySelector('#cp').addEventListener('input', function() {
     if(this.value.length == 5) {
         let urlCommune = `https://geo.api.gouv.fr/communes?&codePostal=${this.value}&fields=code,nom,
         codesPostaux,long,lat;codeRegion,population&format=json&geometry=contour&lat&lon`;
-
+        console.log(urlCommune);
         fetch(urlCommune).then((response) => 
             response.json().then((data) => {
                 let ada = [];
@@ -40,16 +40,16 @@ document.querySelector('#cp').addEventListener('input', function() {
                                 data.wind.speed = (data.wind.speed * 3.6).toPrecision(4);
                                 
                                 const datasMeteo1 = document.querySelector('#datasMeteo1');
-                                datasMeteo1.innerHTML = `<i class="fas fa-thermometer-half"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actuelle : ${data.main.temp}°C<br>`;
+                                datasMeteo1.innerHTML = `<i class="fas fa-thermometer-half"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actuelle<br>${data.main.temp}°C<br>`;
                                 
                                 const datasMeteo2 = document.querySelector('#datasMeteo2');
-                                datasMeteo2.innerHTML = `<i class="fas fa-thermometer"></i>&nbsp;&nbsp;Ressentie: ${data.main.feels_like}°C<br>`;
+                                datasMeteo2.innerHTML = `<i class="fas fa-thermometer"></i>&nbsp;&nbsp;Ressentie<br>${data.main.feels_like}°C<br>`;
 
                                 const datasMeteo3 = document.querySelector('#datasMeteo3');
-                                datasMeteo3.innerHTML = `<i class="fas fa-compress-alt"></i>&nbsp;&nbsp;Pression : ${data.main.pressure} hPa<br>`;
+                                datasMeteo3.innerHTML = `<i class="fas fa-compress-alt"></i>&nbsp;&nbsp;Pression<br>${data.main.pressure} hPa<br>`;
 
                                 const datasMeteo4 = document.querySelector('#datasMeteo4');
-                                datasMeteo4.innerHTML = `<i class="fas fa-tint"></i>&nbsp;&nbsp;&nbsp;Humidité : ${data.main.humidity}%<br>`;
+                                datasMeteo4.innerHTML = `<i class="fas fa-tint"></i>&nbsp;&nbsp;&nbsp;Humidité<br>${data.main.humidity}%<br>`;
 
                                 // Gestion du DOM du bouton et de la recherche Wikipedia de la ville sélectionnée
                                 const btnContent = document.querySelector('#searchButton');
