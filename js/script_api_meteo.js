@@ -1,3 +1,5 @@
+let d =new Date();
+document.querySelector('#infosDate').innerHTML = d.getHours()+":"+d.getMinutes();
 
 document.querySelector('#cp').addEventListener('input', function() {
     if(this.value.length == 5) {
@@ -26,7 +28,7 @@ document.querySelector('#cp').addEventListener('input', function() {
                 for(let i = 0; i<aka.length; i++){
                     aka[i].addEventListener('click', function() {
                         this.innerHTML = `<strong>${ada[i]}</strong>&nbsp;&nbsp;<i class="fas fa-check"></i>`;
-                        
+                        this.style.backgroundColor="lightgrey";
                         // Affichage des données météo dans le container de droite liées à la ville sélectionnée dans la liste
                         const titleCard = document.querySelector('.card-title');
                         titleCard.innerHTML = `${ada[i]}`;

@@ -8,7 +8,7 @@ Image Loupe JS v0.0.1 | MIT License | https://github.com/alecrios/image-loupe-js
 
 [data-loupe-image] {
 	display: block;
-	cursor: none;
+	cursor: crosshair;
 }
 
 [data-loupe-enlarged-image] {
