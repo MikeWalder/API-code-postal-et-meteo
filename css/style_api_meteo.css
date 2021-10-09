@@ -28,6 +28,19 @@ body {
     content: "\00BB     ";
 }
 
+#datasMeteo {
+    min-height: 280px;
+}
+
+canvas {
+    margin-top: 5em;
+    height: 180%;
+}
+
+.opacityGraph {
+    opacity: 0;
+}
+
 .card-img-top {
     width: 60%;
 }
