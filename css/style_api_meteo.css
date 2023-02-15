@@ -6,11 +6,11 @@ body {
     color: orangered;
 }
 
-#infosVilles ul {
+#infosVilles .dropdown-menu {
     padding: 0 0 0 0;
 }
 
-#infosVilles ul:nth-child() {
+#infosVilles li:nth-child() {
     background-color: rgb(155, 39, 39);
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 #datasMeteo {
-    min-height: 280px;
+    min-height: 350px !important;
 }
 
 canvas {
@@ -42,7 +42,7 @@ canvas {
 }
 
 .card-img-top {
-    width: 60%;
+    width: 90%;
 }
 
 #searchButton:hover {
@@ -63,21 +63,21 @@ a:hover {
     color: lightgrey;
 }
 
-#datasMeteo1, #datasMeteo2, #datasMeteo3, #datasMeteo4 {
+#datasInfos1, #datasInfos2, #datasInfos3, #datasInfos4 {
     margin-bottom: 0.2em;
 }
 
-#datasMeteo1, #datasMeteo2, #datasMeteo3 {
+#datasInfos1, #datasInfos2, #datasInfos3 {
     border-style: solid;
     border-color: black;
     border-width: 0px 1px 0px 0px;
 }
 
-#datasMeteo1 {
+#datasInfos1 {
     border-width: 0px 1px 1px 0px;
 }
 
-#datasMeteo2 {
+#datasInfos2 {
     border-width: 0px 0px 1px 0px;
 }
 
